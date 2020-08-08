@@ -1,0 +1,496 @@
+@import "breakpoints"
+$p-front-size: 24px
+
+@include for-tablet-landscape
+  .intro
+    div
+      .name
+        h1
+          font-size: 32px
+
+        p
+          font-size: $p-front-size
+          line-height: 36px
+          width: 400px
+  .algorithm
+    padding: 40px
+
+    .left
+      span
+        font-size: 32px
+
+      p
+        font-size: $p-front-size
+        line-height: 32px
+  .hello
+    .first
+      min-height: 500px
+      padding: 40px 20px 20px 40px
+
+      img
+        width: 50%
+        margin-top: -100px
+
+      h3
+        font-size: 32px
+
+      p
+        font-size: $p-front-size
+        line-height: 32px
+
+    .second
+      h3
+        font-size: 32px
+        line-height: 36px
+        padding: 0 40px
+
+      .bg
+        height: 100px
+
+      .screens
+        padding: 0 40px
+        box-sizing: border-box
+
+        .next
+          height: 70px
+          width: 70px
+
+        .reginster
+          p
+            margin-bottom: 10px
+
+        .app
+          width: 51%
+
+          p
+            font-size: 14px
+            padding-bottom: 10px
+  .payment
+    padding: 60px
+
+    div
+      span
+        font-size: 32px
+
+      p
+        font-size: $p-front-size
+        line-height: 32px
+        width: 330px
+
+    img
+      width: 16vw
+
+  .screenshots
+    padding: 30px
+
+    div
+      img
+        width: 16vw
+
+      P
+        margin-bottom: 5px
+
+  .control
+    .wrapper
+      padding: 40px
+
+      span
+        font-size: 32px
+
+      .row
+        .left
+          width: 50%
+
+          p
+            width: 100%
+            font-size: $p-front-size
+            margin-top: 30px
+            padding: 0 10px
+            box-sizing: border-box
+            line-height: 26px
+
+        .right
+          width: 50%
+
+    .thanks
+      span
+        font-size: 42px
+
+@include for-tablet-portrait
+  .intro
+    img
+      width: 65%
+
+    div
+      .year
+        height: 150px
+        padding: 0 50px
+
+      .name
+        margin-top: 75%
+        width: 100%
+        padding: 15px 30px
+        height: auto
+
+        h1
+          font-size: 26px
+          margin-bottom: 10px
+
+        p
+          width: 100%
+          font-size: 18px
+          line-height: 22px
+
+  .algorithm
+    flex-direction: column
+    padding: 30px 15px
+    box-sizing: border-box
+    justify-content: space-evenly
+    min-height: 60vh
+
+    .left
+      width: 100%
+
+      span
+        display: block
+        font-size: 24px
+        text-align: center
+
+      p
+        font-size: 18px
+        width: 80%
+        margin: 20px auto
+        line-height: 20px
+
+    .right
+      width: 80%
+      margin: 0 auto
+  .hello
+    .first
+      padding: 40px
+      min-height: 500px
+      width: 100%
+      text-align: center
+      img
+        width: 70%
+        float: unset
+        margin-top: -80px
+      h3
+        font-size: 28px
+        text-align: center
+        margin: 25px 0
+
+      p
+        width: 80%
+        margin: 0 auto
+        font-size: 20px
+        line-height: 26px
+
+    .second
+      h3
+        box-sizing: border-box
+        width: 100%
+        font-size: 28px
+        text-align: center
+        line-height: 32px
+        padding: 0 20px
+        margin: 20px auto
+      .bg
+        bottom: 42%
+        height: 100px
+      .screens
+        flex-direction: column
+
+        .reginster
+          width: 100%
+
+          p
+            font-size: 20px
+            margin-bottom: 20px
+
+          div
+            img
+              width: 30vw
+              margin: 0 auto
+
+        .next
+          transform: rotateZ(90deg)
+          width: 60px
+          height: 60px
+          margin-bottom: 20px
+
+        .app
+          width: 100%
+          justify-content: space-around
+
+          div
+            margin: 0 auto
+
+            img
+              width: 30vw
+
+            p
+              font-size: 16px
+              padding-bottom: 5px
+  .payment
+    padding: 40px
+    flex-wrap: wrap
+    box-sizing: border-box
+
+    div
+      width: 100%
+
+      span
+        display: block
+        font-size: 28px
+        width: 100%
+        text-align: center
+
+      p
+        width: 95%
+        margin: 20px auto 40px
+        font-size: 20px
+        line-height: 26px
+
+    img
+      width: 25vw
+
+  .screenshots
+    padding: 40px
+    flex-wrap: wrap
+
+    div
+      width: 50%
+      margin: 0 auto
+
+      img
+        width: 30vw
+
+      p
+        width: 100%
+        font-size: 18px
+        margin: 10px auto
+  .control
+    .wrapper
+      padding: 40px
+
+      span
+        display: block
+        width: 100%
+        text-align: center
+        font-size: 28px
+
+      .row
+        flex-direction: column
+
+        .left
+          width: 100%
+
+          p
+            width: 80%
+            margin: 20px auto
+            font-size: 18px
+            line-height: 22px
+
+          img
+            width: 50%
+            margin: 0 auto
+
+        .right
+          width: 100%
+
+          img
+            margin-top: 0
+
+
+    .thanks
+      margin-bottom: 10%
+
+      span
+        font-size: 32px
+
+@include for-phone-only
+  .intro
+    img
+      width: 65%
+
+    div
+      .year
+        height: 150px
+        padding: 0 50px
+
+      .name
+        margin-top: 70%
+        width: 100%
+        padding: 15px 30px
+        height: auto
+
+        h1
+          font-size: 26px
+          margin-bottom: 10px
+
+        p
+          width: 100%
+          font-size: 18px
+          line-height: 22px
+
+  .algorithm
+    flex-direction: column
+    padding: 30px 15px
+    box-sizing: border-box
+    justify-content: space-evenly
+    min-height: 70vh
+
+    .left
+      width: 100%
+
+      span
+        display: block
+        font-size: 24px
+        text-align: center
+
+      p
+        font-size: 18px
+        width: 100%
+        line-height: 20px
+        margin-top: 20px
+
+    .right
+      width: 100%
+  .hello
+    .first
+      padding: 40px
+      min-height: 500px
+
+      img
+        width: 100%
+        float: unset
+        margin-top: -80px
+
+      h3
+        font-size: 24px
+        text-align: center
+        margin-bottom: 25px
+
+      p
+        width: 100%
+        font-size: 18px
+        line-height: 22px
+
+    .second
+      h3
+        box-sizing: border-box
+        width: 100%
+        font-size: 24px
+        text-align: center
+        line-height: 28px
+        padding: 0 20px
+      .bg
+        bottom: 33%
+        height: 100px
+      .screens
+        flex-direction: column
+
+        .reginster
+          width: 100%
+
+          p
+            margin-bottom: 10px
+
+          div
+            img
+              width: 30vw
+              margin: 0 auto
+
+        .next
+          transform: rotateZ(90deg)
+          width: 45px
+          height: 45px
+
+        .app
+          width: 100%
+
+          div
+            margin: 0 auto
+
+            img
+              width: 30vw
+
+            p
+              font-size: 12px
+              padding-bottom: 5px
+  .payment
+    padding: 40px
+    flex-wrap: wrap
+    box-sizing: border-box
+
+    div
+      width: 100%
+
+      span
+        display: block
+        font-size: 24px
+        width: 100%
+        text-align: center
+
+      p
+        width: 100%
+        font-size: 18px
+        line-height: 22px
+        margin: 10px 0 20px
+
+    img
+      width: 25vw
+
+  .screenshots
+    padding: 40px
+    flex-wrap: wrap
+
+    div
+      width: 50%
+      margin: 0 auto
+
+      img
+        width: 30vw
+
+      p
+        width: 100%
+        font-size: 12px
+        margin: 0
+  .control
+    .wrapper
+      padding: 40px
+
+      span
+        display: block
+        width: 100%
+        text-align: center
+        font-size: 24px
+
+      .row
+        flex-direction: column
+
+        .left
+          width: 100%
+
+          p
+            width: 100%
+            margin-top: 20px
+            font-size: 18px
+            line-height: 22px
+
+          img
+            margin: 0 auto
+
+        .right
+          width: 100%
+
+          img
+            margin-top: 0
+
+
+    .thanks
+      margin-bottom: 10%
+
+      span
+        font-size: 32px
