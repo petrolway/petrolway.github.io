@@ -119,7 +119,7 @@ $p-front-size: 24px
 @include for-tablet-portrait
   .intro
     img
-      width: 65%
+      width: 75%
 
     div
       .year
@@ -127,7 +127,7 @@ $p-front-size: 24px
         padding: 0 50px
 
       .name
-        margin-top: 75%
+        margin-top: 80%
         width: 100%
         padding: 15px 30px
         height: auto
@@ -173,9 +173,9 @@ $p-front-size: 24px
       text-align: center
 
       img
-        width: 70%
+        width: 90%
         float: unset
-        margin-top: -80px
+        margin-top: -100px
 
       h3
         font-size: 28px
@@ -189,53 +189,19 @@ $p-front-size: 24px
         line-height: 26px
 
     .second
-      h3
-        box-sizing: border-box
-        width: 100%
-        font-size: 28px
-        text-align: center
-        line-height: 32px
-        padding: 0 20px
-        margin: 20px auto
-
-      .bg
-        bottom: 42%
-        height: 100px
-
-      .screens
-        flex-direction: column
-
-        .reginster
-          width: 100%
-
-          p
-            font-size: 20px
-            margin-bottom: 20px
-
-          div
-            img
-              width: 30vw
-              margin: 0 auto
-
-        .next
-          transform: rotateZ(90deg)
-          width: 60px
-          height: 60px
-          margin-bottom: 20px
-
-        .app
-          width: 100%
-          justify-content: space-around
-
-          div
-            margin: 0 auto
-
-            img
-              width: 30vw
-
+      #carouselExampleIndicators
+        display: block !important
+        .carousel-inner
+          .carousel-item
             p
-              font-size: 16px
-              padding-bottom: 5px
+              font-size: 20px
+              margin-bottom: 15px
+            img
+              width: 50%
+
+      h3, .bg, .screens
+        display: none
+
   .payment
     padding: 40px
     flex-wrap: wrap
@@ -263,48 +229,54 @@ $p-front-size: 24px
     padding: 40px
     flex-wrap: wrap
 
-    div
-      width: 50%
-      margin: 0 auto
-
-      img
-        width: 30vw
-
-      p
-        width: 100%
-        font-size: 18px
-        margin: 10px auto
+    div.screen
+      display: none
+    #carouselExampleIndicators3
+      display: block !important
+      width: 100%
+      .carousel-inner
+        .carousel-item
+          img
+            display: block
+            margin: 0 auto
+          p
+            font-size: 20px
+            color: #FFFFFF
+            text-align: center
   .control
     .wrapper
-      padding: 40px
-
+      padding: 0
+      flex-direction: column
+      box-sizing: border-box
+      margin: 0
       span
         display: block
         width: 100%
         text-align: center
-        font-size: 28px
+        font-size: 24px
+        padding: 0
 
-      .row
-        flex-direction: column
+      .left
+        width: 100%
 
-        .left
+        p
+          padding: 0 40px
           width: 100%
+          margin: 20px 0
+          font-size: 22px
+          line-height: 26px
 
-          p
-            width: 80%
-            margin: 20px auto
-            font-size: 18px
-            line-height: 22px
+        img
+          margin: 30px auto
+          width: 30%
 
-          img
-            width: 50%
-            margin: 0 auto
-
-        .right
-          width: 100%
-
-          img
-            margin-top: 0
+      .right
+        width: 100%
+        img
+          display: block
+          width: 90%
+          margin: 0 auto
+          padding-bottom: 40px
 
 
     .thanks
@@ -316,7 +288,7 @@ $p-front-size: 24px
 @include for-phone-only
   .intro
     img
-      width: 65%
+      width: 85%
 
     div
       .year
@@ -324,7 +296,7 @@ $p-front-size: 24px
         padding: 0 50px
 
       .name
-        margin-top: 70%
+        margin-top: 80%
         width: 100%
         padding: 15px 30px
         height: auto
@@ -363,14 +335,14 @@ $p-front-size: 24px
       width: 100%
   .hello
     .first
-      padding: 40px
+      padding: 0
       min-height: 500px
 
       img
-        width: 100%
+        width: 95%
         float: unset
         margin-top: -80px
-
+        margin-left: 2.5%
       h3
         font-size: 24px
         line-height: 28px
@@ -381,6 +353,7 @@ $p-front-size: 24px
         width: 100%
         font-size: 18px
         line-height: 22px
+        padding: 0 40px
 
     .second
       h3
@@ -485,37 +458,36 @@ $p-front-size: 24px
   .control
     .wrapper
       padding: 0
+      flex-direction: column
+      box-sizing: border-box
+      margin: 0
       span
         display: block
         width: 100%
         text-align: center
         font-size: 24px
+        padding: 0
 
-      .row
-        flex-direction: column
-        box-sizing: border-box
-        margin: 0
+      .left
         width: 100%
-        .left
+
+        p
+          padding: 0 40px
           width: 100%
+          margin: 20px 0
+          font-size: 18px
+          line-height: 22px
 
-          p
-            padding: 0 40px
-            width: 100%
-            margin-top: 20px
-            font-size: 18px
-            line-height: 22px
+        img
+          margin: 20px auto
 
-          img
-            margin: 0 auto
-
-        .right
-          width: 100%
-          img
-            display: block
-            width: 95%
-            margin: 0 auto
-            padding-bottom: 40px
+      .right
+        width: 100%
+        img
+          display: block
+          width: 95%
+          margin: 0 auto
+          padding-bottom: 40px
 
 
     .thanks

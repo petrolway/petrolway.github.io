@@ -78,7 +78,7 @@
 .algorithm .left p {
   margin-top: 45px;
   width: 410px;
-  font-family: Montserrat, monospace;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -165,7 +165,7 @@
 }
 .hello .second .screens {
   display: flex;
-  font-family: Montserrat, monospace;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -179,13 +179,13 @@
   width: 110px;
   align-self: center;
 }
-.hello .second .screens .reginster div {
+.hello .second .screens .register div {
   display: flex;
 }
-.hello .second .screens .reginster div img {
+.hello .second .screens .register div img {
   width: 16vw;
 }
-.hello .second .screens .reginster p {
+.hello .second .screens .register p {
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
@@ -262,7 +262,7 @@
   width: 25%;
 }
 .screenshots div.screen p {
-  font-family: Montserrat, monospace;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -276,8 +276,9 @@
 }
 
 .control .wrapper {
-  padding: 80px 60px 150px 60px;
+  padding: 80px 60px 150px 0;
   box-sizing: border-box;
+  display: flex;
 }
 .control .wrapper span {
   background: linear-gradient(90deg, #3197FF 3.35%, #3A3E8C 100%);
@@ -290,32 +291,31 @@
   line-height: 49px;
   width: auto;
   margin: 15px 0;
+  padding-left: 60px;
 }
-.control .wrapper .row {
-  display: flex;
-}
-.control .wrapper .row .left {
+.control .wrapper .left {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
-.control .wrapper .row .left p {
+.control .wrapper .left p {
   width: 485px;
-  font-family: Montserrat, monospace;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 37px;
   color: #000000;
-  margin-top: 70px;
+  margin: 70px 0 0 60px;
 }
-.control .wrapper .row .left img {
-  width: 70%;
+.control .wrapper .left img {
+  width: 40%;
+  margin: 20px auto;
 }
-.control .wrapper .row .right {
+.control .wrapper .right {
   width: 60%;
 }
-.control .wrapper .row .right img {
+.control .wrapper .right img {
   margin-top: 15px;
   width: 100%;
 }
@@ -451,14 +451,14 @@
 }
 @media (min-width: 600px) and (max-width: 899px) {
   .intro img {
-    width: 65%;
+    width: 75%;
   }
   .intro div .year {
     height: 150px;
     padding: 0 50px;
   }
   .intro div .name {
-    margin-top: 75%;
+    margin-top: 80%;
     width: 100%;
     padding: 15px 30px;
     height: auto;
@@ -506,9 +506,9 @@
     text-align: center;
   }
   .hello .first img {
-    width: 70%;
+    width: 90%;
     float: unset;
-    margin-top: -80px;
+    margin-top: -100px;
   }
   .hello .first h3 {
     font-size: 28px;
@@ -521,52 +521,18 @@
     font-size: 20px;
     line-height: 26px;
   }
-  .hello .second h3 {
-    box-sizing: border-box;
-    width: 100%;
-    font-size: 28px;
-    text-align: center;
-    line-height: 32px;
-    padding: 0 20px;
-    margin: 20px auto;
+  .hello .second #carouselExampleIndicators {
+    display: block !important;
   }
-  .hello .second .bg {
-    bottom: 42%;
-    height: 100px;
-  }
-  .hello .second .screens {
-    flex-direction: column;
-  }
-  .hello .second .screens .reginster {
-    width: 100%;
-  }
-  .hello .second .screens .reginster p {
+  .hello .second #carouselExampleIndicators .carousel-inner .carousel-item p {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
-  .hello .second .screens .reginster div img {
-    width: 30vw;
-    margin: 0 auto;
+  .hello .second #carouselExampleIndicators .carousel-inner .carousel-item img {
+    width: 50%;
   }
-  .hello .second .screens .next {
-    transform: rotateZ(90deg);
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-  }
-  .hello .second .screens .app {
-    width: 100%;
-    justify-content: space-around;
-  }
-  .hello .second .screens .app div {
-    margin: 0 auto;
-  }
-  .hello .second .screens .app div img {
-    width: 30vw;
-  }
-  .hello .second .screens .app div p {
-    font-size: 16px;
-    padding-bottom: 5px;
+  .hello .second h3, .hello .second .bg, .hello .second .screens {
+    display: none;
   }
 
   .payment {
@@ -597,49 +563,58 @@
     padding: 40px;
     flex-wrap: wrap;
   }
-  .screenshots div {
-    width: 50%;
+  .screenshots div.screen {
+    display: none;
+  }
+  .screenshots #carouselExampleIndicators3 {
+    display: block !important;
+    width: 100%;
+  }
+  .screenshots #carouselExampleIndicators3 .carousel-inner .carousel-item img {
+    display: block;
     margin: 0 auto;
   }
-  .screenshots div img {
-    width: 30vw;
-  }
-  .screenshots div p {
-    width: 100%;
-    font-size: 18px;
-    margin: 10px auto;
+  .screenshots #carouselExampleIndicators3 .carousel-inner .carousel-item p {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
   }
 
   .control .wrapper {
-    padding: 40px;
+    padding: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
   }
   .control .wrapper span {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
+    padding: 0;
   }
-  .control .wrapper .row {
-    flex-direction: column;
-  }
-  .control .wrapper .row .left {
+  .control .wrapper .left {
     width: 100%;
   }
-  .control .wrapper .row .left p {
-    width: 80%;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 22px;
+  .control .wrapper .left p {
+    padding: 0 40px;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 22px;
+    line-height: 26px;
   }
-  .control .wrapper .row .left img {
-    width: 50%;
+  .control .wrapper .left img {
+    margin: 30px auto;
+    width: 30%;
+  }
+  .control .wrapper .right {
+    width: 100%;
+  }
+  .control .wrapper .right img {
+    display: block;
+    width: 90%;
     margin: 0 auto;
-  }
-  .control .wrapper .row .right {
-    width: 100%;
-  }
-  .control .wrapper .row .right img {
-    margin-top: 0;
+    padding-bottom: 40px;
   }
   .control .thanks {
     margin-bottom: 10%;
@@ -650,14 +625,14 @@
 }
 @media (max-width: 599px) {
   .intro img {
-    width: 65%;
+    width: 85%;
   }
   .intro div .year {
     height: 150px;
     padding: 0 50px;
   }
   .intro div .name {
-    margin-top: 70%;
+    margin-top: 80%;
     width: 100%;
     padding: 15px 30px;
     height: auto;
@@ -698,13 +673,14 @@
   }
 
   .hello .first {
-    padding: 40px;
+    padding: 0;
     min-height: 500px;
   }
   .hello .first img {
-    width: 100%;
+    width: 95%;
     float: unset;
     margin-top: -80px;
+    margin-left: 2.5%;
   }
   .hello .first h3 {
     font-size: 24px;
@@ -716,6 +692,7 @@
     width: 100%;
     font-size: 18px;
     line-height: 22px;
+    padding: 0 40px;
   }
   .hello .second h3 {
     display: none !important;
@@ -821,36 +798,34 @@
 
   .control .wrapper {
     padding: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
   }
   .control .wrapper span {
     display: block;
     width: 100%;
     text-align: center;
     font-size: 24px;
+    padding: 0;
   }
-  .control .wrapper .row {
-    flex-direction: column;
-    box-sizing: border-box;
-    margin: 0;
+  .control .wrapper .left {
     width: 100%;
   }
-  .control .wrapper .row .left {
-    width: 100%;
-  }
-  .control .wrapper .row .left p {
+  .control .wrapper .left p {
     padding: 0 40px;
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 18px;
     line-height: 22px;
   }
-  .control .wrapper .row .left img {
-    margin: 0 auto;
+  .control .wrapper .left img {
+    margin: 20px auto;
   }
-  .control .wrapper .row .right {
+  .control .wrapper .right {
     width: 100%;
   }
-  .control .wrapper .row .right img {
+  .control .wrapper .right img {
     display: block;
     width: 95%;
     margin: 0 auto;

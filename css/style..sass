@@ -78,7 +78,7 @@
     p
       margin-top: 45px
       width: 410px
-      font-family: Montserrat, monospace
+      font-family: Montserrat, sans-serif
       font-style: normal
       font-weight: normal
       font-size: 30px
@@ -166,7 +166,7 @@
 
     .screens
       display: flex
-      font-family: Montserrat, monospace
+      font-family: Montserrat, sans-serif
       font-style: normal
       font-weight: 500
       font-size: 18px
@@ -180,7 +180,7 @@
         width: 110px
         align-self: center
 
-      .reginster
+      .register
         div
           display: flex
 
@@ -261,7 +261,7 @@
     width: 25%
 
     p
-      font-family: Montserrat, monospace
+      font-family: Montserrat, sans-serif
       font-style: normal
       font-weight: 500
       font-size: 18px
@@ -275,8 +275,9 @@
 
 .control
   .wrapper
-    padding: 80px 60px 150px 60px
+    padding: 80px 60px 150px 0
     box-sizing: border-box
+    display: flex
 
     span
       background: linear-gradient(90deg, #3197FF 3.35%, #3A3E8C 100%)
@@ -289,34 +290,34 @@
       line-height: 49px
       width: auto
       margin: 15px 0
+      padding-left: 60px
 
-    .row
+
+    .left
       display: flex
+      flex-direction: column
+      width: 40%
 
-      .left
-        display: flex
-        flex-direction: column
+      p
+        width: 485px
+        font-family: Montserrat, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 30px
+        line-height: 37px
+        color: #000000
+        margin: 70px 0 0 60px
+
+      img
         width: 40%
+        margin: 20px auto
 
-        p
-          width: 485px
-          font-family: Montserrat, monospace
-          font-style: normal
-          font-weight: normal
-          font-size: 30px
-          line-height: 37px
-          color: #000000
-          margin-top: 70px
+    .right
+      width: 60%
 
-        img
-          width: 70%
-
-      .right
-        width: 60%
-
-        img
-          margin-top: 15px
-          width: 100%
+      img
+        margin-top: 15px
+        width: 100%
 
   .thanks
     background: rgba(58, 66, 145, 0.19)
