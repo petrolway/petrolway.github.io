@@ -1,6 +1,19 @@
 @import "breakpoints"
 $p-front-size: 24px
-
+@include for-desktop
+  .hello
+    .second
+      .screens
+        .register
+          div
+            img
+              min-height: 337px
+              max-height: 477px
+        .app
+          div
+            img
+              min-height: 337px
+              max-height: 477px
 @include for-tablet-landscape
   .intro
     div

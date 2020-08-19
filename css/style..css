@@ -340,6 +340,16 @@
   line-height: 78px;
 }
 
+@media (min-width: 1200px) and (max-width: 1699px) {
+  .hello .second .screens .register div img {
+    min-height: 337px;
+    max-height: 477px;
+  }
+  .hello .second .screens .app div img {
+    min-height: 337px;
+    max-height: 477px;
+  }
+}
 @media (min-width: 900px) and (max-width: 1199px) {
   .intro div .name h1 {
     font-size: 32px;
