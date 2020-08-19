@@ -237,6 +237,7 @@
 }
 .payment img {
   width: 18vw;
+  height: auto;
 }
 .payment #carouselExampleIndicators2 {
   display: none !important;
