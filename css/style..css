@@ -186,7 +186,7 @@
 }
 .hello .second .screens .register div img {
   width: 16vw;
-  display: block;
+  height: auto;
 }
 .hello .second .screens .register p {
   text-align: center;
@@ -209,6 +209,7 @@
 }
 .hello .second .screens .app div img {
   width: 16vw;
+  height: auto;
 }
 
 .payment {
