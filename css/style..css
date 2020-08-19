@@ -276,6 +276,7 @@
 }
 .screenshots div.screen img {
   margin: 0 auto;
+  display: block;
 }
 
 .control .wrapper {
