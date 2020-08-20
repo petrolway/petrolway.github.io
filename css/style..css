@@ -181,17 +181,22 @@
   width: 110px;
   align-self: center;
 }
+.hello .second .screens .register {
+  display: flex;
+}
+.hello .second .screens .register p {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
 .hello .second .screens .register div {
   display: flex;
+  flex-direction: column;
 }
 .hello .second .screens .register div img {
   width: 16vw;
   height: auto;
-}
-.hello .second .screens .register p {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 20px;
 }
 .hello .second .screens .app {
   width: 48%;
