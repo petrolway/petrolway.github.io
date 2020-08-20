@@ -240,7 +240,16 @@
   line-height: 35px;
   color: #3A4291;
 }
-.payment img {
+.payment .payment_screens {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.payment .payment_screens div {
+  display: flex;
+  flex-direction: column;
+}
+.payment .payment_screens div img {
   width: 18vw;
   height: auto;
 }
@@ -563,27 +572,63 @@
   }
 
   .payment {
-    padding: 40px;
+    padding: 0;
     flex-wrap: wrap;
     box-sizing: border-box;
   }
-  .payment div {
+  .payment div.text {
     width: 100%;
+    padding: 40px;
   }
-  .payment div span {
+  .payment div.text span {
     display: block;
-    font-size: 28px;
+    font-size: 24px;
     width: 100%;
     text-align: center;
   }
-  .payment div p {
-    width: 95%;
-    margin: 20px auto 40px;
-    font-size: 20px;
-    line-height: 26px;
+  .payment div.text p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 10px 0 20px;
   }
   .payment img {
-    width: 25vw;
+    display: none;
+  }
+  .payment #carouselExampleIndicators2 {
+    display: block !important;
+    width: 100%;
+  }
+  .payment #carouselExampleIndicators2 .carousel-inner .carousel-item img {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+  }
+  .payment #carouselExampleIndicators2 a.carousel-control-next-icon, .payment #carouselExampleIndicators2 a.carousel-control-prev-icon {
+    color: #000000;
+  }
+
+  .screenshots {
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  .screenshots div.screen {
+    display: none;
+  }
+  .screenshots #carouselExampleIndicators3 {
+    display: block;
+    width: 100%;
+  }
+  .screenshots #carouselExampleIndicators3 .carousel-inner .carousel-item p {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    color: #FFFFFF;
+  }
+  .screenshots #carouselExampleIndicators3 .carousel-inner .carousel-item img {
+    display: block;
+    width: 60% !important;
+    margin: 0 auto;
   }
 
   .screenshots {
